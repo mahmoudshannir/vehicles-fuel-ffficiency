@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/mshannir/Documents/My Folder/IU File/Classes/Spring_2023/Applied Database Technologies/Final Project Submition/Final_Project_April_16_2023/VehiclesFuelEfficiency.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="7402"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,13:maintblCredential"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1"></sql><sql name="Edit View vw_get_vehicles_data">CREATE VIEW &quot;vw_get_vehicles_data&quot; AS select 
+v.ID,
+c.Category,
+d.Drivetrain,
+v.Model_Year,
+ec.Engine_Cylinder,
+es.Engine_Size,
+et.Engine_Type,
+f.Fuel,
+m.Manufacturer,
+vm.Model,
+vt.Transmission_Type,
+v.Conventional_Fuel_Economy_City,
+v.Conventional_Fuel_Economy_Highway,
+v.Conventional_Fuel_Economy_Combined
+from tbl_vehicle_fuel_efficiency v
+left join tbl_vehicle_category c
+on v.Category_ID = c.Category_ID
+left join tbl_vehicle_drivetrain d
+on v.Drivetrain_ID = d.Drivetrain_ID
+left join tbl_vehicle_engine_cylinder ec
+on v.Engine_Cylinder_ID = ec.Engine_Cylinder_ID
+left join tbl_vehicle_engine_size es
+on v.Engine_Size_ID = es.Engine_Size_ID
+left join tbl_vehicle_engine_type et
+on v.Engine_Type_ID = et.Engine_Type_ID
+left join tbl_vehicle_fuel f
+on v.Fuel_ID = f.Fuel_ID
+left join tbl_vehicle_manufacturer m
+on v.Manufacturer_ID = m.Manufacturer_ID
+left join tbl_vehicle_model vm
+on v.Model_ID = vm.Model_ID
+left join tbl_vehicle_transmission vt
+on v.Transmission_Type_ID = vt.Transmission_Type_ID</sql><current_tab id="1"/></tab_sql></sqlb_project>
