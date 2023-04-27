@@ -78,7 +78,6 @@ openpyxl==3.0.10
 outcome==1.1.0
 packaging==23.1
 pandas==1.4.2
-pandas-gbq==0.17.6
 pandas-profiling==1.4.0
 parso==0.8.3
 patsy==0.5.3
