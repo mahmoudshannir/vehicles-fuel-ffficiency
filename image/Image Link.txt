@@ -1,4 +1,0 @@
-https://wrench.com/blog/content/images/2019/11/ecofriendly.jpg
-
-background-image: url('https://www.rd.com/wp-content/uploads/2022/08/GettyImages-111653718-e1659715295953.jpg?resize=700,466');
-      background-image: url('https://greenbusinessjournal.co.uk/wp-content/uploads/2021/10/CO2-recycling-696x364.jpg');
