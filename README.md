@@ -4,9 +4,6 @@ This web application will provide useful information and features regarding vehi
 
 Also the Web App available for public: 
 
-You can access the app by using the below URL:
-https://mshannir.herokuapp.com/
-
 To Login you can use below username and password or register:
 
 username: Admin 
